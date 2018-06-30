@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/rank/rank",   
+    "pages/list/list",
+    "pages/main/main",
+    "pages/copyright/copyright"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "小情愿",
+    "navigationBarTextStyle": "black"
+  }
+}

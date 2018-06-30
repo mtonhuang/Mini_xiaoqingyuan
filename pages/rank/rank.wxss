@@ -1,0 +1,179 @@
+/* pages/rank/rank.wxss */
+.contain {
+  width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+  position:relative;
+  z-index:2;
+}
+.rank-btn{
+  height: 10vh;
+  width: 100vw;
+  padding: 30rpx 0 ;
+}
+.rank-btn .btn-list{
+  width: 25%;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  text-align: center;
+}
+.rank-btn image{
+  width:100rpx;
+  height: 100rpx;
+  
+}
+
+.rank-btn .text {
+  font-size: 30rpx;
+  color:white;
+}
+.rank-title {
+  width: 100vw;
+  height: 200rpx;
+  text-align: center;
+  margin: 10rpx 0 30rpx 0;
+  position: relative;
+}
+.rank-title .text {
+  width: 100%;
+  height: 200rpx;
+  display: inline-block;
+  position: relative;
+  z-index: 5;
+}
+
+/*ball-start*/
+.rank-title .ball-box .ball {
+  position: absolute;
+  top: 150rpx;
+  width: 7%;
+  height: 110rpx;
+  opacity: .8;
+}
+
+.rank-title .ball-box .ball image {
+  width: 100%;
+  height: 100%;
+  animation: ballmove 4s infinite;
+  transform-origin:center top ;
+  animation-timing-function:ease;
+}
+
+@keyframes ballmove {
+  0% {transform:rotate(40deg)}
+  50% {transform:rotate(-40deg)}
+  100% {transform:rotate(40deg)}
+}
+/*ball-end*/
+
+.rank-content{
+  height: auto;
+  width: 94vw;
+  margin:  0  3vw;
+  overflow: hidden;
+  padding-bottom: 50rpx;
+}
+.rank-content .no-data {
+   color: white;
+   text-align: center;
+   font-size: 30rpx;
+   margin: 20rpx;
+}
+.content-list{
+  background-size:cover;
+width:48%;
+height:700rpx;
+float:left;
+margin:20rpx 1%;
+position:relative;
+overflow:hidden;
+border-radius: 8rpx;
+
+}
+ .content-list.item1 {
+  /* background-image: url("http://dev.mini.zsylife.cn/data/upload/images/items1.png");  */
+  background: linear-gradient(to bottom, #369d8f, #e7e7de);
+}
+.content-list.item2{
+  /* background-image: url("http://dev.mini.zsylife.cn/data/upload/images/items2.png"); */
+   background: linear-gradient(to bottom, #36509c, #e7dfdf);
+}
+.content-list.item3{
+  /* background-image: url("http://dev.mini.zsylife.cn/data/upload/images/items3.png"); */
+   background: linear-gradient(to bottom, #9967bb, #f1e2e3);
+}
+.content-list.item4{
+  /* background-image: url("http://dev.mini.zsylife.cn/data/upload/images/items4.png"); */
+   background: linear-gradient(to bottom, #cda456, #f7e8d8);
+} 
+.content-list .img-box{
+  width: 100%;
+  z-index: -1;
+  height:500rpx;
+  position: relative;
+  border-radius:10rpx;
+overflow:hidden;
+
+}
+.content-list .img-box image {
+  width:100%;
+  height: 100%;
+}
+.content-list .text {
+  height: 60rpx;
+  font-size: 30rpx;
+  line-height: 60rpx;
+  width: 90%;
+  position:absolute;
+  z-index:10;
+  bottom:0;
+  padding: 0 5%;
+  color:#3da092;
+}
+.content-list .text .iconfont.liked {
+  color:#f93e61;
+}
+.content-list .rank-logo {
+  display: none;
+  position: absolute;
+  width: 120rpx;
+  height: 120rpx;
+  z-index: 5;
+  background-size: 100% 100%;
+  left:50%;
+margin-left:-60rpx;
+margin-top:70rpx;
+
+}
+/* 
+.content-list:nth-child(2) .rank-logo {
+  display: block;
+  background-image: url("http://dev.mini.zsylife.cn/data/upload/images/first.png");
+}
+.content-list:nth-child(3) .rank-logo {
+display: block;
+  background-image: url("http://dev.mini.zsylife.cn/data/upload/images/second.png");
+}
+.content-list:nth-child(4) .rank-logo {
+display: block;
+  background-image: url("http://dev.mini.zsylife.cn/data/upload/images/third.png");
+} */
+
+.bottom-note {
+  width: 100vw;
+  height: 60rpx;
+  overflow: hidden;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+.bottom-note image {
+  width: 50rpx;
+  height: 50rpx;
+}
+.bottom-note view {
+  color: white;
+  font-size: 70%;
+}
+

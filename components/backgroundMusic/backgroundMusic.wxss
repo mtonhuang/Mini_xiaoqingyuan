@@ -1,0 +1,48 @@
+@import "../../font/iconfont.wxss";
+
+.playbtn {
+  margin: 20rpx;
+  top: 0;
+  right: 70rpx;
+  position:fixed;
+  padding:0;
+  width: 60rpx;
+  height: 60rpx;
+  opacity: 0.8;
+  color:white;
+  text-shadow: 0 0 10rpx #000;
+}
+.nextbtn{
+margin: 20rpx;
+  top: 0;
+  right: 0rpx;
+  position:fixed;
+  padding:0;
+  width: 60rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  opacity: 0.8;
+  color:white;
+  text-shadow: 0 0 10rpx #000;
+   
+}
+.nextbtn .iconfont {
+  font-size: 120%;
+}
+.playbtn.play {
+ 
+  animation: move linear 3s infinite;
+}
+.playbtn .iconfont {
+  height: 60rpx;
+  line-height: 60rpx;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 120%;
+}
+
+@keyframes move {
+   0% {transform:rotate(0deg)}
+  100% {transform:rotate(360deg)}
+}

@@ -1,0 +1,10 @@
+  <view class='index'>{{nowIndex+1}}/{{mainData.length}}</view>
+  <view class='text' style='letter-spacing: 0rpx;' catchtap='toggleText' wx:if="{{!isEditor}}"> {{mainData[nowIndex]}}   <view class='touch-box' wx:if='{{mainData.length > 1 && isFirst}}' >
+  <!-- <view class='touch'></view> -->
+  点我翻页 </view></view>  
+  <form bindsubmit='editorSubmit'  hidden="{{!isEditor|| isShare }}">
+  <textarea name='editor' class='input' show-confirm-bar='false' bindlinechange='bindLineCount' style=' letter-spacing: 15rpx;' type='text' placeholder='点击可输入自定义内容哦'></textarea>
+  <button form-type='submit' class='submit'>确定       </button> 
+   <button form-type='reset' class='submit reset'>重置       </button> 
+  </form>
+  <view class='canEditor' hidden='{{isShare}}' catchtap='toggleEditor'>{{isEditor?'取消':'编辑'}}</view>  

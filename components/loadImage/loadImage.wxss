@@ -1,0 +1,17 @@
+.mask {
+  width:100%;
+  height: 100%;
+}
+.img {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  transition:all linear 0.5s ;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+}
+.img.show {
+  opacity: 1;
+}

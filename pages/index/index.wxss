@@ -1,0 +1,85 @@
+.box {
+  background-image: url(https://mini.zsylife.cn/data/upload/images/bg.jpg);
+  min-height: 100vh;
+  background-size: cover;
+}
+.main-text {
+   background-image: url(https://mini.zsylife.cn/data/upload/images/index-text.png);
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position-y:30vh; 
+   height: 35vh;
+    width: 100%;
+    padding-top: 30vh;
+  opacity:0;
+   transform: translateY(-200px);
+}
+
+
+.main-btn {
+   background-image: url(http://dev.mini.zsylife.cn/data/upload/images/index-btn.png);
+   background-size: contain;
+   width: 25vw;
+   margin: 2vh auto;
+   height: 25vw;
+   opacity:0;
+   transform: translateY(200px);
+   /* animation: move 6s infinite; */
+}
+
+.bottom-copyright {
+  position: absolute;
+  bottom:0;
+  text-align: center;
+  color:white;
+  opacity: 0.7;width: 100vw;
+  font-size: 25rpx;
+  padding: 30rpx 0;
+  letter-spacing: 5rpx;
+}
+
+@keyframes move {
+  0% {transform:scale(1,1)}
+  50% {transform:scale(1.3,1.3)}
+  100% {transform:scale(1,1)}
+}
+
+
+
+
+/*
+.main-text {
+  width: 100%;
+  padding-top: 30vh;
+  color: white;
+  font-size: 28rpx;
+}
+.main-text .top-text {
+  text-align: center;
+}
+.main-text .top-text text{
+  display: block;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+.main-text .top-line {
+  background-image: url(http://www.wero6.com/qijiecong/top-line.png);
+  width: 100%;
+  height: 5rpx;
+  background-size: contain;
+  margin-top: 40rpx;
+}
+.main-text .textname {
+  font-size: 150rpx;
+  font-weight: bolder;
+}
+.main-text .bottom-line {
+  background-image: url(http://www.wero6.com/qijiecong/bottom-line.png);
+   width: 100%;
+  height: 5rpx;
+  background-size: contain;
+   margin-top: 40rpx;
+   font-size: 20rpx;
+   line-height: 5rpx;
+}
+*/

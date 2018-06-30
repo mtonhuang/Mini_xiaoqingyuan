@@ -1,0 +1,3 @@
+<view class='playbtn {{isPlay?"play":""}} {{isShare?"nextbtn":""}}' bindtap="btn"><view class='iconfont {{isPlay?"icon-yiliao":"icon-play"}}'></view></view>
+<view class='nextbtn ' hidden='{{isShare}}' bindtap="toggleSong"><view class='iconfont icon-kuaijin'></view></view>
+

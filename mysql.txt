@@ -1,0 +1,39 @@
+公司自己测试服务器
+
+IP： 111.231.235.41 
+
+172.16.0.3 (内)
+
+用户名：root
+ 
+密码：WHYYWoc5wW
+
+
+
+mysql
+
+用户名：root
+
+密码：LM2Vhq5C2k
+
+mysql 
+172.16.0.7 
+
+LM2Vhq5C2k
+
+
+软件地址：
+/usr/local
+
+ftp  
+111.231.235.41
+    
+  xftp_user     21
+      zsy@2018
+
+
+域名：zsylife.cn
+
+
+
+http://111.231.235.41/phpMyAdmin/index.php?db=mini_admin&token=9c219ceac931ee0e7bf3393154efae35

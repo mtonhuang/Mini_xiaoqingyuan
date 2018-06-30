@@ -1,0 +1,27 @@
+
+<view class='box'>
+ <backgroundmusic isShare='{{isShare}}' isPlay='{{isPlay}}'>
+    </backgroundmusic>
+  <alert id="shareAlert" btn='{{true}}' btnText="分享"></alert>
+  <view class='header-title bgBox' style='background-image:url({{mainData[pageData.id].title}})'>
+  </view>
+
+  <view class='top-text bgBox' style='background-image:url({{mainData[pageData.id].topText}})'></view>
+  <view class='content bgBox'>
+      <view wx:if="{{pageData.id==0 || pageData.id==2}}" wx:for="{{rawData}}" wx:key="rawData" wx:for-index="index" wx:for-item='items' style='background-image:url({{index%2 == 0 ? mainData[pageData.id].content.main1:mainData[pageData.id].content.main2}})' class='content-main {{pageData.ename}} {{index%2 == 0 ? "odd" : "even"}}' >
+      <fdialog class='dialog' style='background-image:url({{mainData[pageData.id].content.dialog}})' groupId='{{index}}' isShare='{{isShare}}' index='{{0}}' mainData='{{items[0]}}' bind:datachange='editorDataSet'></fdialog>
+      <fdialog class='dialog' style='background-image:url({{mainData[pageData.id].content.dialog}})' groupId='{{index}}' isShare='{{isShare}}' index='{{1}}' mainData='{{items[1]}}' bind:datachange='editorDataSet'></fdialog>
+      </view>
+      <view wx:if="{{pageData.id==1 || pageData.id==3}}" wx:for="{{rawData}}" wx:key="rawData" wx:for-index="index" wx:for-item='items' style='background-image:url({{index%2 == 0 ? mainData[pageData.id].content.main1:mainData[pageData.id].content.main2}})' class='content-main cloud {{pageData.ename}} {{index%2 == 0 ? "odd" : "even"}}' >
+      <fdialog class='dialog ' style='background-image:url({{mainData[pageData.id].content.dialog}})' groupId='{{index}}'  isShare='{{isShare}}' index='{{0}}' mainData='{{items[0]}}' bind:datachange='editorDataSet'></fdialog>
+      <fdialog class='dialog' style='background-image:url({{mainData[pageData.id].content.dialog1}})' groupId='{{index}}' isShare='{{isShare}}' index='{{1}}' mainData='{{items[1]}}' bind:datachange='editorDataSet'></fdialog>
+      </view>
+  </view>
+  <view class='footer bgBox'  style='background-image:url({{mainData[pageData.id].footer}})'>
+       <!-- <button wx:if="{{!isShare && !isSave}}" catchtap='saveData'  class='share-btn'>保存</button> -->
+        <!-- <button wx:if="{{!isShare && isSave}}" open-type='share'  class='share-btn '><text class='iconfont icon-fenxiang-tianchong '></text>分享</button>  -->
+        <button wx:if="{{!isShare}}" catchtap='saveData'  class='share-btn'><text class='iconfont icon-fenxiang-tianchong '></text>分享</button> 
+         <navigator url="../list/list"><button  class='share-btn' wx:if="{{isShare}}">去制作</button> </navigator>
+  </view>
+
+</view>  

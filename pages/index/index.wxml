@@ -1,0 +1,16 @@
+<view class="box" data-src='../list/list'  bindtouchend='toOther'>
+  <!-- <view class='main-text'>
+    <view class='top-text'>
+    <text>生活有多美好我不知道</text>
+     <text>我只知道有个词叫“来日方长”</text>
+     <view class='top-line'></view>
+     <view class='textname'>情    愿</view>
+     <view class='bottom-line'>来日方长</view>
+   </view>
+  </view>  -->
+  <view class='main-text' animation="{{animationData.text}}"></view>
+  <view class='main-btn' animation="{{animationData.btn}}" >  </view>
+  <view class='bottom-copyright' data-src='../copyright/copyright' catchtap='toOther'>— 版权声明 —</view>
+</view>
+<backgroundmusic isPlay="{{isPlay}}">
+    </backgroundmusic>

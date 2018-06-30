@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "backgroundmusic": "/components/backgroundMusic/backgroundMusic",
+    "alert": "/components/alert/alert",
+    "fdialog": "/components/dialog/dialog"
+    ,
+    "loadImage": "/components/loadImage/loadImage",
+    "rankbox": "/components/rankbox/rankbox"
+  }
+}

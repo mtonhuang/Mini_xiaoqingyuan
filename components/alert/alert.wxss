@@ -1,0 +1,39 @@
+.alert-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,.5);
+   display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      z-index: 99;
+}
+
+.alert-main {
+   width: 60%;
+   height: auto;
+   text-align: center;
+   padding: 50rpx;
+   background-color: rgb(210,210,210);
+   border-radius: 10rpx;
+   transition:all 0.3s linear;
+}
+.alert-main.dis {
+     width: 0%;
+   height: 0px;
+   overflow: hidden;
+   padding: 0; 
+     
+   
+}
+
+.btn {
+  background-color: #fccfd6;
+  margin: 30rpx 0;
+  color: white;
+}

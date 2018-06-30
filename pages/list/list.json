@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "backgroundmusic": "/components/backgroundMusic/backgroundMusic",
+    "alert": "/components/alert/alert"
+    ,
+    "loadImage": "/components/loadImage/loadImage"
+  }
+}

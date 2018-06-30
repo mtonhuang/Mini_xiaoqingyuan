@@ -1,0 +1,24 @@
+ <button class='authbtn' hidden='{{!authBtn}}'  open-type="getUserInfo" bindgetuserinfo="userInfoHandler" >点击授权</button>
+<view class="container">
+  <block wx:for="{{type}}" wx:key="type">
+    <view class='item-box' catchtap='toMain' data-id="{{item.id}}" data-ename="{{item.ename}}">
+      <!-- <image class='bg' src="{{item.bgsrc}}"></image> -->
+       <loadImage class='bg' height='23.125vh' src='{{item.bgsrc}}' bgcolor='rgb(211,211,211)'></loadImage> 
+      <view class='text-box'>
+        <image class='fl' src="{{item.flsrc}}"></image>{{item.name}}</view>
+    </view>
+  </block>
+
+  <navigator url="../rank/rank">
+     <!-- <button style='position:absolute; bottom:0;width:320rpx;right:0;'>看看别人的作品</button>  -->
+     <view class='toRank'>
+        <image  src="../../images/toRank.jpg"></image>TA的情愿
+        </view>
+  </navigator>
+</view>
+
+
+
+<backgroundmusic isPlay="{{isPlay}}">
+</backgroundmusic>
+<alert id="alert"></alert>

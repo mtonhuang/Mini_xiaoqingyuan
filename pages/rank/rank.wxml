@@ -1,0 +1,77 @@
+<!--pages/rank/rank.wxml-->
+<view class="contain">
+  <!-- <navigator url="../index/index"><button>返回首页   </button></navigator>  -->
+  <loadImage src='http://dev.mini.zsylife.cn/data/upload/images/rankbg.png' bgcolor='#F6E0DF' height="100vh" style="position:fixed;width:100vw;z-index:-2;"></loadImage>
+  <view class='rank-title'>
+    <image src='../../images/rank/title1.png' class='text'></image>
+    <view class='ball-box'>
+      <view class="ball">
+        <image src='../../images/rank/ball1.png'></image>
+      </view>
+      <view class="ball" style="left:8%">
+        <image src='../../images/rank/ball2.png'></image>
+      </view>
+      <view class="ball" style="left:20%;top:140rpx;">
+        <image src='../../images/rank/ball3.png'></image>
+      </view>
+      <view class="ball" style="left:30%;top:140rpx;">
+        <image src='../../images/rank/ball4.png'></image>
+      </view>
+      <view class="ball" style="left:35%;top:120rpx;">
+        <image src='../../images/rank/ball1.png'></image>
+      </view>
+      <view class="ball" style="left:43%;top:120rpx;">
+        <image src='../../images/rank/ball4.png'></image>
+      </view>
+      <view class="ball" style="left:50%;top:130rpx;">
+        <image src='../../images/rank/ball2.png'></image>
+      </view>
+      <view class="ball" style="left:57%;top:140rpx;">
+        <image src='../../images/rank/ball3.png'></image>
+      </view>
+      <view class="ball" style="left:66%;top:150rpx;">
+        <image src='../../images/rank/ball4.png'></image>
+      </view>
+      <view class="ball" style="left:75%;top:160rpx;">
+        <image src='../../images/rank/ball1.png'></image>
+      </view>
+      <view class="ball" style="left:82%;top:160rpx;">
+        <image src='../../images/rank/ball2.png'></image>
+      </view>
+      <view class="ball" style="left:89%;top:160rpx;">
+        <image src='../../images/rank/ball3.png'></image>
+      </view>
+      <view class="ball" style="left:95%;top:160rpx;">
+        <image src='../../images/rank/ball4.png'></image>
+      </view>
+    </view>
+  </view>
+  <view class="rank-btn">
+    <view class="btn-list" wx:for="{{titleData}}" wx:key="index"  catchtap='togglePage' data-id="{{item.id}}" bindtap='contentDetail'>
+      <image src="{{item.imgUrl}}"></image>
+      <view class='text'>{{item.name}}</view>
+    </view>
+  </view>
+
+  <view class='rank-content'>
+    <view class='no-data' hidden='{{!isNull}}'>暂无数据么么哒</view>
+     <!-- <view wx:for="{{contentData}}" wx:key='index' class='content-list {{index%4 == 0 ? "item1" :index%4 == 1 ? "item2":index%4 == 2?"item3":"item4"}}' data-type='{{nowData.id}}' data-shareId='{{item.datas.id}}' catchtap='toMain'>
+      <view class='rank-logo'></view>
+      <view class="img-box">
+        <image src="{{item.datas.avatarurl}}"></image>
+      </view>
+      <view class="text">{{item.datas.nickname}}
+        <view data-shareId='{{item.datas.id}}' data-index="{{index}}" catchtap='praiseIt' class='iconfont icon-buoumaotubiao16 right {{item.ifpriase ? "liked":""}}'> {{item.datas.priase}}</view>
+      </view>
+    </view>  -->
+
+    <rankbox wx:for="{{contentData}}" wx:key='index' class='content-list {{index%4 == 0 ? "item1" :index%4 == 1 ? "item2":index%4 == 2?"item3":"item4"}}' page='{{nowData}}' item='{{item}}' index='{{index}}'>
+
+    </rankbox>
+
+  </view>
+  <view class='bottom-note'>
+   <image hidden='{{!isDown}}' src="../../images/loading.gif"></image> 
+  <view hidden='{{!listData[nowData.id].isBottom}}'>——我也是有底线的——</view>
+  </view>
+</view>

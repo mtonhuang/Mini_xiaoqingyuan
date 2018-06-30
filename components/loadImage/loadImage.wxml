@@ -1,0 +1,5 @@
+<view class='img-box' style='height:{{height}}'>
+   <view  class='mask' style='background-color:{{bgcolor}};'></view>
+   <image class='img {{isLoad ? "show":""}}' src = '{{src}}' bindload='load'></image>
+</view>
+

@@ -1,0 +1,26 @@
+<view class='content-list' catchtap='toMain'>
+      <!-- <view class='rank-logo index{{index}}' ></view>
+      <view class="img-box">
+        <image src="{{item.datas.avatarurl}}"></image>
+      </view>
+      <view class="text">{{item.datas.nickname}}
+        <view data-shareId='{{item.datas.id}}' catchtap='praiseIt' class='iconfont icon-buoumaotubiao16 right {{item.ifpriase ? "liked":""}}'> {{item.datas.priase}}</view>
+      </view> -->
+      <view class='img-box index{{index}}'>
+        <image src="{{item.datas.avatarurl}}"></image>
+      </view>
+      <scroll-view scroll-y class='content'>
+        <view class='content-box'>
+         <view class='box' wx:for='{{contentData}}' wx:key='content'>
+              <view>{{item[0]}}</view>
+              <view>{{item[1]}}</view>
+              
+         </view>
+         </view>
+      </scroll-view>
+      <view class='text'>
+      {{item.datas.nickname}}
+        <view data-shareId='{{item.datas.id}}' catchtap='praiseIt' class='iconfont icon-buoumaotubiao16 right {{item.ifpriase ? "liked":""}}'> {{item.datas.priase}}</view>
+      </view>
+</view>
+   

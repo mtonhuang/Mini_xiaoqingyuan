@@ -1,0 +1,86 @@
+ .input {
+   width: 100%;
+   display: inline-block;
+   height: 80rpx;
+   line-height: 40rpx;  
+}
+.submit {
+  position: absolute;
+  top: 0;
+  font-size: 80%;
+  border-radius: 5rpx;
+  padding: 0 8rpx;
+  top: -30rpx; 
+  left: 47%;
+  background: rgba(255,255,225,.7);
+  /* box-shadow:  0 0 10rpx #000000; */
+  height: 40rpx;
+  line-height: 40rpx;
+     color: hsl(88, 70%, 30%) !important;
+    background-color: hsl(88, 70%, 60%);
+    -webkit-box-shadow: inset rgba(255,254,255,0.6) 0 0.3em .3em, inset rgba(0,0,0,0.15) 0 -0.1em .3em, /* inner shadow */ hsl(88, 70%, 40%) 0 .1em 3px, hsl(88, 70%, 30%) 0 .3em 1px, /* color border */ rgba(0,0,0,0.2) 0 .5em 5px;
+    -moz-box-shadow: inset rgba(255,254,255,0.6) 0 0.3em .3em, inset rgba(0,0,0,0.15) 0 -0.1em .3em, /* inner shadow */ hsl(88, 70%, 40%) 0 .1em 3px, hsl(88, 70%, 30%) 0 .3em 1px, /* color border */ rgba(0,0,0,0.2) 0 .5em 5px;
+    box-shadow: inset rgba(255,254,255,0.6) 0 0.3em .3em, inset rgba(0,0,0,0.15) 0 -0.1em .3em, /* inner shadow */ hsl(88, 70%, 40%) 0 .1em 3px, hsl(88, 70%, 30%) 0 .3em 1px, /* color border */ rgba(0,0,0,0.2) 0 .5em 5px;
+}
+.reset {
+  left:  70%;
+}
+.canEditor {
+  position: absolute;
+  top: 0;
+  font-size: 80%;
+  border-radius: 5rpx;
+  padding: 0 8rpx;
+  top: -30rpx; 
+  background: rgba(255,255,225,.7);
+  color: hsl(88, 70%, 30%) !important;
+  background-color: hsl(88, 70%, 60%);
+  -webkit-box-shadow: inset rgba(255,254,255,0.6) 0 0.3em .3em, inset rgba(0,0,0,0.15) 0 -0.1em .3em, /* inner shadow */ hsl(88, 70%, 40%) 0 .1em 3px, hsl(88, 70%, 30%) 0 .3em 1px, /* color border */ rgba(0,0,0,0.2) 0 .5em 5px;
+  -moz-box-shadow: inset rgba(255,254,255,0.6) 0 0.3em .3em, inset rgba(0,0,0,0.15) 0 -0.1em .3em, /* inner shadow */ hsl(88, 70%, 40%) 0 .1em 3px, hsl(88, 70%, 30%) 0 .3em 1px, /* color border */ rgba(0,0,0,0.2) 0 .5em 5px;
+   box-shadow: inset rgba(255,254,255,0.6) 0 0.3em .3em, inset rgba(0,0,0,0.15) 0 -0.1em .3em, /* inner shadow */ hsl(88, 70%, 40%) 0 .1em 3px, hsl(88, 70%, 30%) 0 .3em 1px, /* color border */ rgba(0,0,0,0.2) 0 .5em 5px;
+}
+.text {
+  letter-spacing: 0rpx;
+  height: 80rpx;
+}
+.touch-box {
+  position: absolute;
+  right: 20rpx;
+  font-size: 80%;
+  color:white;
+  top: 45%;
+  height: 30rpx;
+  line-height: 30rpx;
+  text-shadow: 1px 1px 5rpx #FF0000;
+   animation:  opac linear 4s infinite; 
+}
+.touch {
+  width: 30rpx;
+  height:30rpx;
+  position: absolute;
+  border-radius:  999rpx;
+  box-shadow: 0 0 40rpx rgb(150,150,150);
+  left: 0;
+ /* animation:  myfirst linear 4s infinite;*/
+}
+.index {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 70%;
+}
+
+@keyframes touch
+{
+0% {box-shadow: 0 0 20rpx rgb(210,210,210)}
+50% {box-shadow: 0 0 20rpx rgb(150,150,150)}
+100% {box-shadow: 0 0 20rpx rgb(210,210,210)}
+}
+
+@keyframes opac
+{
+0% {opacity: 1}
+50% {opacity:0.3}
+100% {opacity: 1}
+}
+

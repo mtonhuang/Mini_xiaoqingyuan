@@ -1,0 +1,6 @@
+<view class='copyright'>
+   <view class='title'>—版权声明—</view>
+   <view class='para' wx:for="{{para}}" wx:key='copyrightPara'>
+   {{item}}
+   </view>
+</view>

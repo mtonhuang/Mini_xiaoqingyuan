@@ -1,0 +1,79 @@
+@import  "/font/iconfont.wxss" ;
+.left {
+  float: left
+}
+.right {
+  float: right
+}
+.content-list {
+  height: 600rpx;
+}
+.content-list .img-box{
+  width: 200rpx;
+  z-index: 1;
+  height:200rpx;
+  position: relative;
+  border-radius:999rpx;
+overflow:hidden;
+   box-shadow: 0 0 10rpx #fff;
+   margin: 20rpx auto;
+}
+.content-list .img-box image {
+  width:100%;
+  height: 100%;
+}
+.content-list .text {
+  height: 100rpx;
+  font-size: 30rpx;
+  line-height: 100rpx;
+  width: 90%;
+  position:absolute;
+  z-index:10;
+  bottom:0;
+  padding: 0 5%;
+  color:#3da092;
+}
+.content-list .text .iconfont.liked {
+  color:#f93e61;
+}
+.content {
+   display: flex;
+  align-items: center;
+  height: 350rpx;
+  overflow: hidden;
+}
+.content .content-box .box {
+  padding: 0 5%;
+  color:white;
+  font-size: 27rpx;
+  margin: 15rpx 0 ;
+}
+
+
+
+
+.content-list .rank-logo {
+  display: none;
+  position: absolute;
+  width: 120rpx;
+  height: 120rpx;
+  z-index: 5;
+  background-size: 100% 100%;
+  left:50%;
+margin-left:-60rpx;
+margin-top:70rpx;
+
+}
+
+.rank-logo.index0 {
+  display: block;
+  background-image: url("http://dev.mini.zsylife.cn/data/upload/images/first.png");
+}
+.rank-logo.index1 {
+display: block;
+  background-image: url("http://dev.mini.zsylife.cn/data/upload/images/second.png");
+}
+.rank-logo.index2 {
+display: block;
+  background-image: url("http://dev.mini.zsylife.cn/data/upload/images/third.png");
+}

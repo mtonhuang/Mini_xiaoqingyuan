@@ -1,0 +1,12 @@
+<!--components/alert/alert.wxml-->
+<view class='alert-box' bindtap='hideIt' wx:if="{{isShow}}">
+   <view class='alert-main {{isAnim ? "":"dis"}}'>
+       <view>{{message}} </view> 
+
+         <button wx:if='{{btn}}' open-type='share'  catchtap='action' class='btn'>{{btnText}}</button>
+         <button wx:if='{{btn}}' catchtap='hideIt'>返回</button>
+
+
+   </view>
+  
+</view>
